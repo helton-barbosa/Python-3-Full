@@ -4,7 +4,7 @@
 # Se qualquer valor for considerado falso,
 # a expressão inteira será avaliada naquele valor
 # São considerados falsy os seguintes valores:
-# 0 0.0 '' False
+# 0 0.0 '' False, [], (), {}, set()
 # Também existe o tipo None que é usado para representar um não valor
 
 entrada = input('[E]ntrar - [S]air: ')
