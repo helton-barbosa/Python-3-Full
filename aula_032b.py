@@ -11,15 +11,23 @@ print(f'{linha_completa}')
 print(f'{linha_partes} Que Horas São? {linha_partes}')
 print(f'{linha_completa}')
 
-hora = input(f'\nDigite a hora atual (hh:mm): ')
+entrada = input(f'\nDigite a hora atual (apenas a hora): ')
 
-somente_hora = int(hora[:-3])
-manha = 0 <= somente_hora < 12
-tarde = 12 <= somente_hora < 18
+try:
+    hora = int(entrada)
+    hora_valida = 0 <= hora < 24 
 
-if manha:
-    print(f'Bom dia! São {hora}')
-elif tarde:
-    print(f'Boa tarde! São {hora}')
-else:
-    print(f'Boa noite! São {hora}')
+    manha = 0 <= hora < 12
+    tarde = 12 <= hora < 18
+
+    if hora_valida:
+        if manha:
+            print(f'Bom dia!')
+        elif tarde:
+            print(f'Boa tarde!')
+        else:
+            print(f'Boa noite!')
+    else:
+        print(f'A hora {hora} não é válida!')
+except:
+    print(f'Digite apenas horas válidas.')
