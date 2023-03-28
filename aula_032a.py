@@ -15,11 +15,13 @@ eh_inteiro = valor.isdigit()
 
 if eh_inteiro:
     valor_2 = int(valor)
-    if valor_2 == 0:
+    zero = valor_2 == 0
+    par = valor_2 % 2 == 0
+    if zero:
         print(f'O valor {valor_2} é nulo.')
-    elif valor_2 % 2 == 0:
-        print(f'O valor {valor_2} é Par.')
+    elif par:
+        print(f'O valor {valor_2} é par.')
     else:
-        print(f'O valor {valor_2} é Ímpar.')
+        print(f'O valor {valor_2} é ímpar.')
 else:
     print(f'Não é um número inteiro')
