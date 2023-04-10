@@ -7,7 +7,7 @@ Loop infinito -> Quando um código não tem fim
 
 contador = 0
 
-while contador <= 30:
+while contador < 30:
     contador += 1
     if contador % 2 == 0:
         print(f'O número {contador} é PAR.')
