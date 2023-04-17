@@ -5,13 +5,13 @@ Interando strings com while
 
 # *H*e*l*t*o*n
 
-nome = input('Digite o nome que deseja iterar: ')
+nome = input('Digite o nome que deseja modificar: ')
 tamanho_nome = len(nome)
-iterador = 0
+indice = 0
 novo_nome = ''
 
-while iterador < tamanho_nome:
-    novo_nome += '*' + nome[iterador]
-    iterador += 1
+while indice < tamanho_nome:
+    novo_nome += f'*{nome[indice]}'
+    indice += 1
 
 print(f'O nome modificado ficará assim: {novo_nome}')
