@@ -15,5 +15,10 @@ Create  Read    Update  Delete
 Criar   Ler     Alterar Apagar = lista[i] (CRUD)
 """
 
-lista_a = []
-lista_b = []
+lista_a = [1, 'Helton', 3]
+lista_b = [4, 'Barbosa', 6]
+lista_c = lista_a + lista_b
+print(lista_c)
+
+lista_d = lista_a.extend(lista_b)
+print(lista_a)
