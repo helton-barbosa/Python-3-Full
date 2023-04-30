@@ -27,10 +27,16 @@ fruta_removida = frutas.pop()
 print(f'Removida a fruta {fruta_removida} da lista.')
 print(frutas)
 
-try:
-    fruta_a_remover = input('Digite fruta a remover: ')
-    print(f'A fruta {fruta_a_remover} está no índice {frutas.index(fruta_a_remover)}')
-    frutas.remove(fruta_a_remover)
-    print(f'Lista atualizada. -> {frutas}')
-except ValueError:
-    print(f'A fruta {fruta_a_remover} não está na lista.')
+# try:
+#     fruta_a_remover = input('Digite fruta a remover: ')
+#     print(f'A fruta {fruta_a_remover} está no índice {frutas.index(fruta_a_remover)}')
+#     frutas.remove(fruta_a_remover)
+#     print(f'Lista atualizada. -> {frutas}')
+# except ValueError:
+#     print(f'A fruta {fruta_a_remover} não está na lista.')
+
+frutas.reverse()
+print(frutas)
+
+frutas.clear()
+print(frutas)
