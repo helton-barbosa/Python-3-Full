@@ -4,6 +4,7 @@ Exiba os índices da lista
 """
 
 lista = ['Manga', 'Acerola', 'Maracujá', 'Azeitona']
+lista.append('Sapoti')
 
 # # Solução 1
 # indice = 0
