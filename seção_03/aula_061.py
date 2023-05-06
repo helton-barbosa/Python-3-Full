@@ -25,8 +25,8 @@ O primeiro dígito é 7
 """
 cpf = '746.824.890-70'
 numeros = []
-contador = 10
-resultado = 0
+contador_regressivo_1 = 10
+resultado_1 = 0
 
 for i, digito in enumerate(cpf):
     if digito == '.':
@@ -34,15 +34,15 @@ for i, digito in enumerate(cpf):
     if digito == '-':
         break
 
-    numeros.append(int(digito) * contador)
-    contador -= 1
+    numeros.append(int(digito) * contador_regressivo_1)
+    contador_regressivo_1 -= 1
 
 for digito in numeros:
-    resultado += digito
+    resultado_1 += digito
 
-resultado *= 10
-resultado %= 11
+resultado_1 *= 10
+resultado_1 %= 11
 
-primeiro_digito = f'1º dígito é 0.' if resultado > 9 else f'1º dígito é {resultado}.'
+primeiro_digito = f'1º dígito é 0.' if resultado_1 > 9 else f'1º dígito é {resultado_1}.'
 
 print(primeiro_digito)
