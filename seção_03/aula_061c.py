@@ -1,5 +1,6 @@
+import re
+
 cpf = '062.922.131-61'
-cpf_limpo = cpf.replace('.', '').replace('-', '')
 numeros_1 = []
 numeros_2 = []
 pri_digito = int(cpf[-2])
@@ -8,6 +9,12 @@ contador_regressivo_1 = 10
 contador_regressivo_2 = 11
 resultado_1 = 0
 resultado_2 = 0
+
+cpf_limpo = re.sub(
+    r'[^0-9]',
+    '',
+    cpf
+)
 
 for digito in cpf_limpo:
     numeros_1.append(int(digito) * contador_regressivo_1)
