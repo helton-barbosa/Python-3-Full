@@ -3,8 +3,6 @@
 """
 Crie uma função que multiplica todos os argumentos não nomeados recebidos
 Retorne o total para uma variável e mostre o valor da variável
-
-Crie uma função que retorna se um número é Par ou Ímpar
 """
 
 
@@ -14,6 +12,11 @@ def multiplicar(*args):
         produto *= numeros
 
     return produto
+
+
+"""
+Crie uma função que retorna se um número é Par ou Ímpar
+"""
 
 
 def par_ou_impar(numero):
