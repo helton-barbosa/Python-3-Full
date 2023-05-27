@@ -21,5 +21,22 @@ l1 = set(s2)
 print(s2)
 print(l1)
 print(7 in l1)
+
 # Métodos úteis:
 # add, update, clear, dicard
+
+s3 = set()
+s3.add('Helton')
+s3.add('Barbosa')
+s3.add('Santos')
+s3.add('Ferreira')
+print(s3)
+s3.update(('Rosilene', 'Ferreira', 'Xavier', 'Barbosa'))
+print(s3)
+s3.discard('Santos')
+print(s3)
+# Operadores úteis:
+# união | união (union) - Une
+# intersecção & (intersection) - Itens presentes em ambos
+# diferença - Itens presentes apenas no set da esquerda
+# diferença simétrica ^ - Itens que não estão em ambos
