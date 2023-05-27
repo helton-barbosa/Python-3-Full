@@ -16,5 +16,10 @@ print(s1, type(s1))
 # - Eles não garantem ordem
 # - Eles são iteráveis (for, in, not in)
 
+s2 = [1, 2, 3, 3, 2, 4, 5, 5, 5, 6]
+l1 = set(s2)
+print(s2)
+print(l1)
+print(7 in l1)
 # Métodos úteis:
 # add, update, clear, dicard
