@@ -35,8 +35,27 @@ s3.update(('Rosilene', 'Ferreira', 'Xavier', 'Barbosa'))
 print(s3)
 s3.discard('Santos')
 print(s3)
+
 # Operadores úteis:
 # união | união (union) - Une
 # intersecção & (intersection) - Itens presentes em ambos
 # diferença - Itens presentes apenas no set da esquerda
 # diferença simétrica ^ - Itens que não estão em ambos
+
+s4 = {0, 1, 2, 3, 4}
+s5 = {3, 4, 5, 6, 7}
+
+s6 = s4 | s5
+print(f'União {s6}')
+
+s6 = s4 & s5
+print(f'Intersecção {s6}')
+
+s6 = s4 - s5
+print(f'Diferença {s6}')
+
+s6 = s5 - s4
+print(f'Diferença {s6}')
+
+s6 = s4 ^ s5
+print(f'Diferença Simétrica {s6}')
