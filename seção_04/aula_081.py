@@ -15,7 +15,7 @@ lista = [
 """
 
 lista_de_numeros_1 = [3, 5, 7, 23, 43, 54, 12, 23, 34, 54, 87, 0, 98, 9, 4]
-lista_de_numeros_1.sort()
+lista_de_numeros_1.sort(reverse=True)
 lista_de_numeros_2 = sorted(lista_de_numeros_1)
 print(lista_de_numeros_1)
 print(lista_de_numeros_2)
@@ -30,14 +30,16 @@ lista = [
 
 
 # def ordena(item):
-#     return item['Sobrenome']
+#     return item['Idade']
+
 
 # lista.sort(key=ordena)
+#
+lista.sort(key=lambda item: item['Nome'])
 
-# lista.sort(key=lambda item: item['Idade'])
+for item in lista:
+    print(item)
 
-# for item in lista:
-#     print(item)
 
 def exibir(lista):
     for item in lista:
