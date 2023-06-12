@@ -21,7 +21,7 @@ dados_pessoa = {
     'altura': 1.79
 }
 
-# Desempacotar dois dicionários em apenas um dicionário
+# Desempacotar dois dicionários e empacotar em apenas um dicionário
 pessoas_completa = {**pessoa, 'cor': 'Preta', **dados_pessoa}
 print(pessoas_completa)
 print()
