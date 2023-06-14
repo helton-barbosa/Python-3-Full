@@ -2,6 +2,13 @@
 List comprehension em Python
 List comprehension é uma forma rápida para criar listas a partir de iteráveis
 """
+import pprint
+
+
+def p(v):
+    pprint.pprint(v, sort_dicts=False, width=40)
+
+
 lista = []
 for numero in range(16):
     lista.append(numero)
@@ -36,5 +43,21 @@ novos_produtos = [
     if produto['preço'] > 20 else {**produto}
     for produto in produtos
 ]
-print(novos_produtos)
-print(*novos_produtos, sep='\n')
+# p(novos_produtos)
+# print(*novos_produtos, sep='\n')
+
+# lista = [
+#     n
+#     for n in range(10)
+#     if n < 5
+# ]
+# p(lista)
+
+novos_produtos = [
+    # {**produto, 'preço': produto['preço'] * 1.05}
+    {'Nome': produto['nome'], 'Preço': produto['preço'] * 1.05}
+    if produto['preço'] > 20 else {**produto}
+    for produto in produtos
+    if produto['preço'] > 15
+]
+p(novos_produtos)
