@@ -1,6 +1,8 @@
 """
 Dictionary Comprehension e Set Comprehension
 """
+
+# Dictionary Comprehension
 produto = {
     'Nome': 'Impressora HP Tank Wireless',
     'Preço': 1200.00,
@@ -20,3 +22,7 @@ dc = {
 }
 
 print(dc)
+
+# Set Comprehension
+s1 = {i for i in range(10)}
+print(s1)
